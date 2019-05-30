@@ -8,7 +8,8 @@ class PigLatinizer
       if word.match(/[aeiou]/)
         pig_words << "#{word}way"
       elsif word.match(/[^aeiou]/)
-        pig_words << "#{word[0...word.index(/[aeiou]/)]}ay"
+        first_vowel = word.index(/[aeiou]/)
+        pig_words << "#{word[first_vowel..-1]}#{word[0...first_vowel]}ay"
         pig_words << "#{word[1..-1]}#{word[0]}ay"
       end
     end
