@@ -6,7 +6,7 @@ class PigLatinizer
       if word[0].downcase.match(/[aeiou]/)
         pig_words << "#{word}way"
       else
-        pig_word << "#{word[1..-1]}#{word[0]}ay"
+        pig_words << "#{word[1..-1]}#{word[0]}ay"
       end
     end
 
