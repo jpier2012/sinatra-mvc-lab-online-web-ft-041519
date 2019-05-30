@@ -3,6 +3,8 @@ class PigLatinizer
     @string = string
   end
 
+  def piglatinize
 
+  end
 
 end
