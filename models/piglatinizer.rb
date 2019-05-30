@@ -3,8 +3,8 @@ class PigLatinizer
     pig_words = []
 
     string.split(' ').each do |word|
-      binding.pry
       word = word.downcase
+      binding.pry
       if word.match(/[aeiou]/)
         pig_words << "#{word}way"
       elsif word.match(/[^aeiou]/)
