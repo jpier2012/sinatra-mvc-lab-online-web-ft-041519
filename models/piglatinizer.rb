@@ -3,11 +3,12 @@ class PigLatinizer
     pig_words = []
 
     string.split(' ').each do |word|
-      if word.flatten.downcase.match(/[aeiou]/)
+      binding.pry
+      word = word.flatten.downcase
+      if word.match(/[aeiou]/)
         pig_words << "#{word}way"
-      elsif word.flatten.downcase.match(/[^aeiou]/)
-        word.flatten.each
-
+      elsif word.match(/[^aeiou]/)
+        word.find_index(/[aeiou]/)
         pig_words << "#{word[1..-1]}#{word[0]}ay"
       end
     end
