@@ -4,8 +4,10 @@ class PigLatinizer
   end
 
   def piglatinize
-    word = string.split(' ')
-    pig_string = "#{@string[1..-1]}#{@string[0]}ay"
+    words = string.split(' ')
+    word.each do |word|
+      "#{word[1..-1]}#{word[0]}ay"
+    end
   end
 
 end
