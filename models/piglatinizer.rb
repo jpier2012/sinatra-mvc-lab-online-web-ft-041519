@@ -4,7 +4,7 @@ class PigLatinizer
 
     string.split(' ').each do |word|
       word = word.downcase
-      if word.match(/[aeiou]/)
+      if word[0].match(/[aeiou]/)
         pig_words << "#{word}way"
       else
         first_vowel = word.index(/[aeiou]/)
