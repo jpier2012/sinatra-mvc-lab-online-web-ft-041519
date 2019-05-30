@@ -1,6 +1,6 @@
 class PigLatinizer
   def piglatinize(string)
-    pig_words = ""
+    pig_words = []]
 
     string.split(' ').each do |word|
       if word[0].downcase.match(/[aeiou]/)
