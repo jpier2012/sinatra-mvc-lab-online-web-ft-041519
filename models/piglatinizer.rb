@@ -3,6 +3,6 @@ class PigLatinizer
     @string = string
   end
 
-  
+
 
 end
