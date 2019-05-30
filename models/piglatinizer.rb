@@ -4,9 +4,9 @@ class PigLatinizer
     pig_words = ""
     words.each do |word|
       if word[0].downcase.match(/[aeiou]/)
-        pig_word = "#{word}way"
+        pig_words << "#{word}way"
       else
-        pig_word = "#{word[1..-1]}#{word[0]}ay"
+        pig_word << "#{word[1..-1]}#{word[0]}ay"
       end
     end
   end
