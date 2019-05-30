@@ -8,7 +8,7 @@ class PigLatinizer
     words.each do |word|
       if word[0].downcase.match(/[aeiou]/)
         "#{word}way"
-      else  
+      else
         "#{word[1..-1]}#{word[0]}ay"
       end
     end
