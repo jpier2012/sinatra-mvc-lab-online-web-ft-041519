@@ -6,7 +6,7 @@ class PigLatinizer
       if word.flatten.downcase.match(/[aeiou]/)
         pig_words << "#{word}way"
       elsif word.flatten.downcase.match(/[^aeiou]/)
-        word.flatten.each 
+        word.flatten.each
 
         pig_words << "#{word[1..-1]}#{word[0]}ay"
       end
