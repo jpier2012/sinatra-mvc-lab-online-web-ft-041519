@@ -1,7 +1,4 @@
 class PigLatinizer
-
-
-  
   def piglatinize
     words = string.split(' ')
     words.each do |word|
